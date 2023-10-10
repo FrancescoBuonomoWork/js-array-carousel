@@ -30,14 +30,14 @@ for (i = 0; i < arrayImmagini.length; i++) {
 
 
 
-
+// recuperiamo le frecce dal DOM 
 const frecciaSuDOMElement = document.querySelector(".top-ar");
 console.log(frecciaSuDOMElement);
 const frecciaGiuDOMElement = document.querySelector(".bot-ar");
 console.log(frecciaGiuDOMElement);
 
 
-
+// evento freccia in giu 
 frecciaGiuDOMElement.addEventListener("click", function (){
     
 })
