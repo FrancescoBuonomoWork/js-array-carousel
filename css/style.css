@@ -9,7 +9,8 @@ img {
 }
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin:300px auto;
+
     display: flex;
     justify-content: center;
 
