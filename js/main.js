@@ -22,7 +22,9 @@ for (i = 0; i < arrayImmagini.length; i++) {
     
     imgContainerDOMElement[0].innerHTML += imageDOMelement;
     
+    
 }
+
 
 
 
