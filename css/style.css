@@ -42,9 +42,7 @@ img {
     border: 1px solid currentColor;
     border-radius: 50%;
 }
-.ds-none{
-    display: none;
-}
+
 .active {
     display: block;
 }

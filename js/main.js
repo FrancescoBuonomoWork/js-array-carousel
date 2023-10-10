@@ -17,10 +17,30 @@ for (i = 0; i < arrayImmagini.length; i++) {
     console.log(currentImg);
 
     const imageDOMelement = `
-    <img src="${currentImg} class="" alt=""">`
+    <img src="${currentImg}" alt=""">`
     console.log(imageDOMelement);
+    
     imgContainerDOMElement[0].innerHTML += imageDOMelement;
+    
 }
+
+
+
+
+
+
+const frecciaSuDOMElement = document.querySelector(".top-ar");
+console.log(frecciaSuDOMElement);
+const frecciaGiuDOMElement = document.querySelector(".bot-ar");
+console.log(frecciaGiuDOMElement);
+
+
+
+frecciaGiuDOMElement.addEventListener("click", function (){
+    
+})
+
+
 // const imgTagDOMElement = document.createElement("img");
 // console.log(imgTagDOMElement);
 
