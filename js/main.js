@@ -19,6 +19,7 @@ for (i = 0; i < arrayImmagini.length; i++) {
     const imageDOMelement = `
     <img src="${currentImg}">`
     console.log(imageDOMelement);
+    imgContainerDOMElement.innerHTML += imageDOMelement;
 }
 // const imgTagDOMElement = document.createElement("img");
 // console.log(imgTagDOMElement);
