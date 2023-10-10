@@ -10,11 +10,34 @@ img {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 
     
 }
 .img-container {
     width: 700px;
     height: 300px;
+    display: flex;
+    justify-content: center;
 
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+    
+}
+.bot-ar{
+    bottom: 0;
+    left: 50%;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+.top-ar{
+    top: 0;
+    left: 50%;
+    border: 1px solid currentColor;
+    border-radius: 50%;
 }
