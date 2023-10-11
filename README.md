@@ -5,3 +5,6 @@
 
  prendere il primo elemento dal DOM e aggiugerci una classe
  non so come prendere la prima imageDOMelement
+
+
+- Quando arriviamo alla fine dell array vogliamo che torniamo all inizio dell array 

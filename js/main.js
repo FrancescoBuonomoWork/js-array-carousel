@@ -58,6 +58,13 @@ frecciaGiuDOMElement.addEventListener("click", function () {
     currentSlide.classList.add("active");
     console.log(currentSlide);
 
+    console.log(currentIndex, imgItemDOMElements.length)
+    if (currentIndex > imgItemDOMElements.length) {
+        // currentIndex = 0;
+        currentSlide = currentIndex[0];
+        console.log(currentSlide);
+    }
+
     // prendere la slide successva
     //  currentIndex = currentIndex + 1; 
     // togliere aggigungere alla successiva la classe active
