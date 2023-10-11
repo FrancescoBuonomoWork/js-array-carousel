@@ -48,9 +48,19 @@ console.log(frecciaGiuDOMElement);
 
 // evento freccia in giu 
 frecciaGiuDOMElement.addEventListener("click", function (){
-    
-})
+    console.log("click bot")
+//    currentIndex = currentIndex + 1; 
 
+// prendere la slide attiva 
+// togliere la classe active alla slide active 
+// prendere la slide successva 
+// togliere aggigungere alla successiva la classe active 
+// incrementare il valore di currentIndex
+   
+})
+frecciaSuDOMElement.addEventListener("click", function(){
+    console.log("click top")
+})
 
 // const imgTagDOMElement = document.createElement("img");
 // console.log(imgTagDOMElement);
