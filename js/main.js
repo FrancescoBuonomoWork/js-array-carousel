@@ -3,13 +3,12 @@ console.log("funziona");
 const imgContainerDOMElement = document.getElementsByClassName("img-container");
 console.log(imgContainerDOMElement);
 const arrayImmagini = [
-    "./img/01.webp",
-    "./img/02.webp",
-    "./img/03.webp",
-    "./img/04.webp",
-    "./img/05.webp",
-
-]
+    "./img/01.webp", // 0
+    "./img/02.webp", // 1
+    "./img/03.webp", // 2
+    "./img/04.webp", // 3
+    "./img/05.webp", // 4
+]; // arrayImmagini.length - 1
 console.log(arrayImmagini);
 
 for (i = 0; i < arrayImmagini.length; i++) {
@@ -51,19 +50,30 @@ frecciaGiuDOMElement.addEventListener("click", function () {
 
     // prendere la slide attiva 
     console.log(currentSlide);
-    // togliere la classe active alla slide active
-    currentSlide.classList.remove("active");
-
-    currentSlide = imgItemDOMElements[currentIndex += 1];
-    currentSlide.classList.add("active");
-    console.log(currentSlide);
-
     console.log(currentIndex, imgItemDOMElements.length)
-    if (currentIndex > imgItemDOMElements.length) {
+    if (currentIndex >= imgItemDOMElements.length) {
         // currentIndex = 0;
         currentSlide = currentIndex[0];
         console.log(currentSlide);
+
+
     }
+    // togliere la classe active alla slide active
+    currentSlide.classList.remove("active");
+
+    // Se sono all'indice dell'ultimo elemento, riparto da 0
+    // Altrimenti lo incremento di 1
+    if (currentIndex === (imgItemDOMElements.length - 1)) {
+        currentIndex = 0;
+    } else {
+        currentIndex += 1;
+    }
+
+    // Applico la classe active al prossimo elemento
+    currentSlide = imgItemDOMElements[currentIndex];
+    currentSlide.classList.add("active");
+    console.log(currentSlide);
+
 
     // prendere la slide successva
     //  currentIndex = currentIndex + 1; 
@@ -75,8 +85,15 @@ frecciaGiuDOMElement.addEventListener("click", function () {
 frecciaSuDOMElement.addEventListener("click", function () {
     console.log("click top")
     currentSlide.classList.remove("active");
+    if (currentIndex === 0) {
+        currentIndex = imgItemDOMElements.length - 1;
+    } else {
+    currentIndex -= 1;    
+    }
 
-    currentSlide = imgItemDOMElements[currentIndex -= 1];
+
+    
+    currentSlide = imgItemDOMElements[currentIndex];
     currentSlide.classList.add("active");
     console.log(currentSlide);
 })
