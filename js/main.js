@@ -23,11 +23,16 @@ for (i = 0; i < arrayImmagini.length; i++) {
     // console.log(stringaSRC[0]);
     
     imgContainerDOMElement[0].innerHTML += stringaSRC;
-
-    
     
 }
+// recupero le img da DOM 
+const imgItemDOMElements = document.getElementsByClassName("img-item");
+console.log(imgItemDOMElements);
 
+let currentIndex = 0;
+
+let currentSlide = imgItemDOMElements[currentIndex];
+currentSlide.classList.add("active");
 
 
 
