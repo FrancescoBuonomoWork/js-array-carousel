@@ -2,3 +2,6 @@
 
  - scrivere un array con le img 
  - scrivere un ciclo for che le concateni
+
+ prendere il primo elemento dal DOM e aggiugerci una classe
+ non so come prendere la prima imageDOMelement

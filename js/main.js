@@ -16,14 +16,18 @@ for (i = 0; i < arrayImmagini.length; i++) {
     const currentImg = arrayImmagini[i];
     console.log(currentImg);
 
-    const imageDOMelement = `
-    <img src="${currentImg}" alt=""">`
-    console.log(imageDOMelement);
+    const stringaSRC = `
+    <img src="${currentImg}" class="img-item" alt=""">`
+    console.log(stringaSRC);
+    // tentativo di recuperare il primo elemento 
+    // console.log(stringaSRC[0]);
     
-    imgContainerDOMElement[0].innerHTML += imageDOMelement;
+    imgContainerDOMElement[0].innerHTML += stringaSRC;
+
     
     
 }
+
 
 
 
