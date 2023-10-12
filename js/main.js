@@ -51,13 +51,13 @@ frecciaGiuDOMElement.addEventListener("click", function () {
     // prendere la slide attiva 
     console.log(currentSlide);
     console.log(currentIndex, imgItemDOMElements.length)
-    if (currentIndex >= imgItemDOMElements.length) {
-        // currentIndex = 0;
-        currentSlide = currentIndex[0];
-        console.log(currentSlide);
+    // if (currentIndex >= imgItemDOMElements.length) {
+    //     // currentIndex = 0;
+    //     currentSlide = currentIndex[0];
+    //     console.log(currentSlide);
 
 
-    }
+    // }
     // togliere la classe active alla slide active
     currentSlide.classList.remove("active");
 
@@ -85,6 +85,7 @@ frecciaGiuDOMElement.addEventListener("click", function () {
 frecciaSuDOMElement.addEventListener("click", function () {
     console.log("click top")
     currentSlide.classList.remove("active");
+    
     if (currentIndex === 0) {
         currentIndex = imgItemDOMElements.length - 1;
     } else {
